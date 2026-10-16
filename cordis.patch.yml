@@ -1,0 +1,7 @@
+- insert:
+    - id: agent-office
+      name: dsh-agent-office
+      config:
+        port: 4319
+        maxAgents: 48
+        maxEvents: 120

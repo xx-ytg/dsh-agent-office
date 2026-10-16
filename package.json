@@ -1,0 +1,50 @@
+{
+  "name": "dsh-agent-office",
+  "version": "0.1.0",
+  "description": "Watch your DeepSeek Harness agents work in a living pixel office. Real events. Tiny coworkers.",
+  "type": "module",
+  "main": "src/index.mjs",
+  "exports": {
+    ".": "./src/index.mjs"
+  },
+  "files": [
+    "src",
+    "public",
+    "scripts",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh-CN.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22.19.0",
+    "dsh": ">=0.2.1-alpha.4 <0.2.1-alpha.5"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "scripts": {
+    "demo": "node src/demo.mjs",
+    "test": "node --test",
+    "preview": "node src/demo.mjs"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "pixel-office",
+    "agents",
+    "observability"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xx-ytg/dsh-agent-office.git"
+  },
+  "homepage": "https://github.com/xx-ytg/dsh-agent-office#readme",
+  "bugs": {
+    "url": "https://github.com/xx-ytg/dsh-agent-office/issues"
+  },
+  "author": "xx-ytg"
+}

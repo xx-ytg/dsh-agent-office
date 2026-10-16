@@ -1,0 +1,5 @@
+node_modules/
+*.tgz
+office.local.patch.yml
+.DS_Store
+Thumbs.db
